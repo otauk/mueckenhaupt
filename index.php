@@ -22,8 +22,9 @@
     <style type="text/css">.<?php echo $current; ?> >a{color:rgb(218,109,50) !important;}</style>
   </head>
 
-  <body>
-	  <div class="container">
+<body>
+	<div class="container">
+		<div class="row">
 		<nav class="navbar navbar-default  ">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,174 +50,275 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-	  </div>
+		</div>
+		<div class="row">
+			<!-- Jumbotron -->
+			<div class="jumbo" ></div>
+		</div>
 
-	  <!-- Jumbotron -->
-    <div class="jumbotron" ></div>
-
-	<!-- CTA -->
-    <div class="container">
-	    <div class="cta_bar">
+		<!-- CTA -->
+	    <div class="row dgreen" >
 		    <div class="teaser">
-			    Ihr zertifizierter Entsorgungsfachbetrieb im Kreis Paderborn
-		    </div>
-		    <button class="cta_btn">
-			    test
-		    </button>
-	    </div>
-    </div>
+			    <div class="col-md-8">
+				  Ihr zertifizierter Entsorgungsfachbetrieb im Kreis Paderborn
+			    </div>
+			    <div class="col-md-4">
+				    <a href="#">
+						<div class="cta_btn">
+							Kontakt aufnehmen
+					    </div>
+		    		</a>
+			    </div>
+			</div>
+		 </div>
 
-	<!-- Unsere Leistungen -->
-    <div class="container">
-	    <div class="zentriert">
-		    <h1>
-			   Unsere Leistungen
-		    </h1>
-		    <h2>
-			    Für Gewerbetreibende und Privatpersonen
-		    </h2>
-		    <hr />
-		    <p class="center-block">
-			    Text Tetggg gdg dg ergt ererter erter
-		    </p>
-	    </div>
-	   <div class="row zentriert">
-		   <div class="col-md-3">
-			   Kasten
-		   </div>
-		   <div class="col-md-3">
-			   Kasten
-		   </div>
-		   <div class="col-md-3">
-			   Kasten
-		   </div>
-		   <div class="col-md-3">
-			   Kasten
-		   </div>
-	   </div>
-    </div>
-
-	<!-- Über uns -->
-    <div class="container">
-	    <div class="col-md-6">
-		    <h1>
-			   Über uns
-		    </h1>
-		    <h2>
-			    Familienunternehmen in der 3. Generation
-		    </h2>
-		    <hr />
-		    <p>
-			    Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter
-		    </p>
-		    <p>
-			    Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter Text Tetggg gdg dg ergt ererter erter
-		    </p>
-	    </div>
-	    <div class="col-md-6">
-	     	Img Slider
-	    </div>
-    </div>
-
-    <!-- Zitate -->
-    <div class="container">
-	    <div class="col-md-12">
-		    <div class="zitate zentriert">
-			    Zitate
-		    </div>
-	    </div>
-    </div>
-
-    <!-- Galerie -->
-    <div class="container">
-	    <div class="col-md-12">
+		<!-- Unsere Leistungen -->
+	    <div class="row">
 		    <div class="zentriert">
-			    <h1>Bildergalerie</h1>
-			    <hr/>
-			    <button class="gallery_btn">Fuhrpark</button>
-			    <button class="gallery_btn">Fuhrpark</button>
-			    <button class="gallery_btn">Fuhrpark</button>
-			    <button class="gallery_btn">Fuhrpark</button>
+			    <h1>
+				   Unsere Leistungen
+			    </h1>
+			    <h2>
+				    Für Gewerbetreibende und Privatpersonen
+			    </h2>
+			    <hr />
+			    <p class="center-block">
+				     Insbesondere m itende Firmen, die Ihre Metallabf&#228;lle schnell entsorgen m&#252;ssen, <br/>sind auf einen zuverl&#228;ssigen Partner bei der Entsorgung angewiesen.<br/>
+				     <br/>
+				     Die hohe Qualit&#228;t unserer Leistungen sowie die bei uns sehr gro&#223; geschriebene Zuverl&#228;ssigkeit <br/> wird durch unser hochqualifiziertes und dynamisches Team garantiert.
+			    </p>
+		    </div>
+		   <div class="row ">
+			   <div class="col-md-3">
+				   <div class="kasten">
+					   <div class="kasten-headline">Handel</div>
+					   <div class="img"><img src="img/service_container.jpg" /></div>
+					   <div class="kasten-list">
+						   <p>Text</p>
+						   <ul>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+						   </ul>
+					   </div>
+				   </div>
+				   <a href="#">
+					   <div class="kasten-button">
+						Anfrage stellen
+					</div>
+					</a>
+			   </div>
+			   <div class="col-md-3">
+				   <div class="kasten">
+					   <div class="kasten-headline">Industrieservice</div>
+					   <div class="img"><img src="img/service_container.jpg" /></div>
+					   <div class="kasten-list">
+						   <ul>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+						   </ul>
+					   </div>
+				   </div>
+				    <a href="#">
+					   <div class="kasten-button">
+						Anfrage stellen
+					</div>
+					</a>
+			   </div>
+			   <div class="col-md-3">
+				   <div class="kasten">
+					   <div class="kasten-headline">Containerdienst</div>
+					   <div class="img"><img src="img/service_container.jpg" /></div>
+					   <div class="kasten-list">
+						   <ul>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+						   </ul>
+					   </div>
+				   </div>
+				    <a href="#">
+					   <div class="kasten-button">
+						Anfrage stellen
+					</div>
+					</a>
+			   </div>
+			   <div class="col-md-3">
+				   <div class="kasten">
+					   <div class="kasten-headline">Schrottankauf von privat</div>
+					   <div class="img"><img src="img/service_container.jpg" /></div>
+					   <div class="kasten-list">
+						   <ul>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+							   <li>test</li>
+						   </ul>
+					   </div>
+				   </div>
+				   <a href="#">
+					   <div class="kasten-button">
+						Anfrage stellen
+					</div>
+					</a>
+			   </div>
+		   </div>
+	    </div>
+
+		<!-- Über uns -->
+	    <div class="row hgreen">
+		    <div class="col-md-6">
+			    <h1>
+				   Über uns
+			    </h1>
+			    <h2>
+				    Familienunternehmen in der 3. Generation
+			    </h2>
+			    <hr class="green"/>
+			    <p>
+	Bereits in 3. Generation sind wir seit 1979 / 80 an diesem Standort Ihr kompetenter und erfahrener Ansprechpartner f&#252;r Komplett-Entsorgungssysteme in allen Bereichen der Industrie mit Spezialisierung auf die Abfallverwertung aus der Eisen- und Metallindustrie. Hervorgegangen aus einem Rohproduktenhandel im Sauerland sind wir heute mit Standort in Delbr&#252;ck ein international t&#228;tiges, hochmodernes Recycling-Unternehmen mit 25 qualifizierten Mitarbeitern. Wir schlie&#223;en den Rohstoffkreislauf und schaffen neue Wertstoffe.
+			    </p>
+			    <p>
+	 Unsere langfristigen Kundenbeziehungen europaweit basieren auf Partnerschaftlichkeit, Treue und Verl&#228;sslichkeit, Transparenz und Qualit&#228;t.
+	 Wir f&#252;hlen uns den Auftraggebern und der Umwelt verpflichtet.
+			    </p>
+			    <p>
+	 Wir bieten eine gro&#223;e Bandbreite an Dienstleistungen und Service f&#252;r die Entsorgung und Verwertung von Rohstoffen an. Eine fachgerechte, kunden- und serviceorientierte Beratung und Betreuung unserer Kunden ist f&#252;r uns selbstverst&#228;ndlich. 
+			    </p>
+			    <p>
+	  Vertrauen Sie unserer jahrzehntelangen Erfahrung im Bereich der Rohstoffaufbereitung, denn schlie&#223;lich sind beste Rohstoffe die Grundlage hochwertiger Produkte.
+			    </p>
+			    <p>
+	   Lassen Sie sich von unseren Leistungen &#252;berzeugen und profitieren Sie von unseren Angeboten.
+			    </p>
+		    </div>
+		    <div class="col-md-6">
+		     	<img src="img/service_container.jpg" />
 		    </div>
 	    </div>
-	    <div class="col-md-2 thumbnail">
-		    Thumbnail
-		</div>
-		<div class="col-md-2 thumbnail">
-		    Thumbnail
-		</div>
-		<div class="col-md-2 thumbnail">
-		    Thumbnail
-		</div>
-		<div class="col-md-2 thumbnail">
-		    Thumbnail
-		</div>
-		<div class="col-md-2 thumbnail">
-		    Thumbnail
-		</div>
-		<div class="col-md-2 thumbnail">
-		    Thumbnail
-		</div>
-    </div>
 
-    <!-- Qualifizierung -->
-    <div class="container">
-	    <div class="col-md-12">
-		    <div class=" zentriert">
-			    <h1>Qualifizierung</h1>
-			    <h2>Zertifizierter Entsorgungsfachbetrieb, der Umwelt zuliebe!</h2>
-				<hr>
-				<div class="col-md-6">
-					TExt links
-				</div>
-				<div class="col-md-6">
-					TExt rechts
-				</div>
+	    <!-- Zitate -->
+	    <div class="row dgreen">
+		    <div class="col-md-12">
+			    <div class="zitate zentriert">
+				    Zitate
+			    </div>
 		    </div>
 	    </div>
-    </div>
 
-     <!-- Downloads -->
-    <div class="container">
-	    <div class="col-md-12">
+	    <!-- Galerie -->
+	    <div class="row">
+		    <div class="col-md-12">
+			    <div class="zentriert">
+				    <h1>Bildergalerie</h1>
+				    <hr/>
+				    <button class="gallery_btn">Fuhrpark</button>
+				    <button class="gallery_btn">Fuhrpark</button>
+				    <button class="gallery_btn">Fuhrpark</button>
+				    <button class="gallery_btn">Fuhrpark</button>
+			    </div>
+		    </div>
+		    <div class="col-md-2 thumbnail">
+			    Thumbnail
+			</div>
+			<div class="col-md-2 thumbnail">
+			    Thumbnail
+			</div>
+			<div class="col-md-2 thumbnail">
+			    Thumbnail
+			</div>
+			<div class="col-md-2 thumbnail">
+			    Thumbnail
+			</div>
+			<div class="col-md-2 thumbnail">
+			    Thumbnail
+			</div>
+			<div class="col-md-2 thumbnail">
+			    Thumbnail
+			</div>
+	    </div>
+
+	    <!-- Qualifizierung -->
+	    <div class="row hgreen">
+		    <div class="col-md-12">
+			    <div class=" zentriert">
+				    <h1>Qualifizierung</h1>
+				    <h2>Zertifizierter Entsorgungsfachbetrieb, der Umwelt zuliebe!</h2>
+					<hr>
+			    </div>
+					<div class="col-md-6">
+						<p>
+						 Mit unserer Abfallbehandlungsanlage, genehmigt durch das BImSchG, sind wir auch berechtigt, besonders &#252;berwachungsbed&#252;rftige Abf&#228;lle anzunehmen und zu verwerten.<
+						</p>
+						<p>
+            Als zertifizierter Entsorgungsfachbetrieb geben wir unseren Kunden die Sicherheit, dass ihre Abf&#228;lle fach- und sachkundig nach dem Kreislaufwirtschafts-/Abfallgesetz bearbeitet werden. Auch der Umwelt zuliebe!
+						</p>
+						<p>
+            Ebenso verf&#252;gen wir &#252;ber eine bundesweite und europ&#228;ische Transportgenehmigung durch die Europ&#228;ische Wirtschaftsgemeinschaft.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<p>
+ Die T&#220;V Nord AG ist eine technische &#220;berwachungsorganisation, die als internationaler Dienstleister f&#252;r Sicherheit, Pr&#252;fung und Zertifizierung agiert. Grundlage der Zertifizierung ist das Kreislaufwirtschafts-Abfallgesetz mit der Entsorgungsfachbetriebe-Verordnung (EfbV). Darin sind s&#228;mtliche Anforderungen an Betriebe festgelegt, die Abf&#228;lle einsammeln, bef&#246;rdern, lagern, behandeln, verwerten oder beseitigen. Die T&#220;V Nord AG zertifiziert j&#228;hrlich den Entsorgungsfachbetrieb Adolf M&#252;ckenhaupt GmbH &amp; Co. KG um permanent den Nachweis einer ordnungsgem&#228;&#223;en Abwicklung unserer Gesch&#228;ftsprozesse zu erbringen.
+						</p>
+					</div>
+		    </div>
+	    </div>
+
+	     <!-- Downloads -->
+	    <div class="row dgreen">
+		    <div class="col-md-12">
+			    <div class="zentriert">
+				    <h1 class="white">Downloads</h1>
+				    <h2>Zertifikate und Siegel</h2>
+					<hr>
+					<div class="col-md-2 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-2 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-2 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-2 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-2 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-2 thumbnail">
+						Thumbnail
+					</div>
+		    </div>
+		    </div>
+	    </div>
+
+		<!-- Kontakt -->
+	    <div class="row">
+		    <div class="col-md-12">
+			    <div class="zentriert">
+				    <h1>Kontaktieren Sie uns</h1>
+				    <h2>Wir freuen uns auf Sie!</h2>
+					<hr>
+					<p>
+						testsetrt rt erte rtert eter ter
+					</p>
+			    </div>
+		    </div>
 		    <div class="zentriert">
-			    <h1>Downloads</h1>
-			    <h2>Zertifikate und Siegel</h2>
-				<hr>
-				<div class="col-md-2 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-2 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-2 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-2 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-2 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-2 thumbnail">
-					Thumbnail
-				</div>
-	    </div>
-    </div>
-
-	<!-- Kontakt -->
-    <div class="container">
-	    <div class="col-md-12">
-		    <div class="zentriert">
-			    <h1>Kontaktieren Sie uns</h1>
-			    <h2>Wir freuen uns auf Sie!</h2>
-				<hr>
-				<p>
-					testsetrt rt erte rtert eter ter
-				</p>
-		    </div>
-	    </div>
-	    <div class="zentriert">
 		    <div class="col-md-4">
 			    Mail
 			</div>
@@ -227,91 +329,93 @@
 			    Telefon
 		    </div>
 	    </div>
-	    <div class="col-md-6">
-		    Form links
+		    <div class="col-md-6">
+			    Form links
+		    </div>
+		    <div class="col-md-6">
+			    Form rechts
+			    <button>Senden</button>
+		    </div>
 	    </div>
-	    <div class="col-md-6">
-		    Form rechts
-		    <button>Senden</button>
-	    </div>
-    </div>
 
-    <!-- Anfahrt -->
-    <div class="container">
-	    <div class="col-md-12">
-		    <div class="zentriert">
-			    <h1>Anfahrt</h1>
-			    <h2>So finden Sie uns!</h2>
-				<hr>
-				<div class="map">
-					Google Map
-				</div>
-		   </div>
+	    <!-- Anfahrt -->
+	    <div class="row">
+		    <div class="col-md-12">
+			    <div class="zentriert">
+				    <h1>Anfahrt</h1>
+				    <h2>So finden Sie uns!</h2>
+					<hr>
+					<div class="map">
+						Google Map
+					</div>
+			   </div>
+		    </div>
 	    </div>
-    </div>
 
-    <!-- Unsere Partner -->
-    <div class="container">
-	    <div class="col-md-12">
-		    <div class="zentriert">
-			    <h1>Unsere Partner</h1>
-			    <h2>Gemeinsam für Ihren Erfolg</h2>
-				<hr>
-				<div class="col-md-3 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-3 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-3 thumbnail">
-					Thumbnail
-				</div>
-				<div class="col-md-3 thumbnail">
-					Thumbnail
-				</div>
+	    <!-- Unsere Partner -->
+	    <div class="row">
+		    <div class="col-md-12">
+			    <div class="zentriert">
+				    <h1>Unsere Partner</h1>
+				    <h2>Gemeinsam für Ihren Erfolg</h2>
+					<hr>
+					<div class="col-md-3 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-3 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-3 thumbnail">
+						Thumbnail
+					</div>
+					<div class="col-md-3 thumbnail">
+						Thumbnail
+					</div>
+		    </div>
+		    </div>
 	    </div>
-    </div>
 
-    <!-- Footer  -->
-    <div class="container">
-	    <div class="col-md-12">
-				<div class="col-md-2 ">
-					<h1>Allgemein</h1>
-					<ul>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-					</ul>
-				</div>
-				<div class="col-md-2 ">
-					<h1>Leistungen</h1>
-					<ul>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-						<li>eintrag</li>
-					</ul>
-				</div>
-				<div class="col-md-2 ">
-					<h1>Kontakt</h1>
-					Adolf Mückenhaupt<br>
-					GmbH & Co. KG<br>
-					Brubebachstr. 43<br>
-					Gewerbegebiet Westenholz<br>
-					33129 Delbrück<br>
-					Tel.: 02944/97 10-0<br>
-					Fax: 02944/97 10-14
-				</div>
-				<div class="col-md-6">
-					Logo
-				</div>
+	    <!-- Footer  -->
+	    <div class="row dgreen footer">
+		    <div class="col-md-12">
+					<div class="col-md-2 ">
+						<h1>Allgemein</h1>
+						<ul>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+						</ul>
+					</div>
+					<div class="col-md-2 ">
+						<h1>Leistungen</h1>
+						<ul>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+							<li>eintrag</li>
+						</ul>
+					</div>
+					<div class="col-md-2 ">
+						<h1>Kontakt</h1>
+						Adolf Mückenhaupt<br>
+						GmbH & Co. KG<br>
+						Brubebachstr. 43<br>
+						Gewerbegebiet Westenholz<br>
+						33129 Delbrück<br>
+						Tel.: 02944/97 10-0<br>
+						Fax: 02944/97 10-14
+					</div>
+					<div class="col-md-6">
+						Logo
+					</div>
+		    </div>
 	    </div>
-    </div>
+</div>
 
 
 

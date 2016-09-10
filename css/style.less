@@ -2,73 +2,198 @@
 @c-dgreen: rgb(51,91,77);
 @c-hgreen: rgb(150,208,203);
 @c-red: rgb(220,32,48);
+@c-grey:rgb(179,179,180);
 @c-h1: #005a4d;
 
+body {
+	color: @c-grey;
+	font-size: 1em;
+}
 
 
+// Text
+
+h1 {
+	color: @c-dgreen;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 2em;
+}
+
+h2 {
+	color: @c-grey;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+hr {
+	border-top: 10px solid @c-grey;
+	&.green {
+		border-color: @c-dgreen;
+		}
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+// Navigation
+
+.container-fluid {
+	padding: 0;
+	}
+
+.navbar {
+	margin: 0;
+}
 .navbar-default {
 	background: none;
 	border:none;
 }
 
+.navbar-nav {
+	float: right;
+	font-weight: bold;
+	font-size: 1.125em;
+
+	&>li {
+		text-transform: uppercase;
+		border-top: 5px solid transparent;
+		margin: 0 30px;
+
+		&>a {
+			color: @c-dgreen !important;
+			&:hover {
+				color: @c-hgreen !important;
+			}
+		}
+		&:hover {
+			border-top: 5px solid;
+			border-color: @c-hgreen;
+		}
+	}
+}
+
 .logo {
-	width: 200px;
-	height: 50px;
+	width: 400px;
+	min-height: 50px;
 	background: @c-red;
 	float:left;
 }
 
-.navbar-default .navbar-nav>li>a {
-	color: @c-dgreen;
-}
-
-.jumbotron {
+.jumbo {
 	background: url("../img/header.jpg");
 	background-size: cover;
 	width:100%;
 	padding: 20%;
 	margin: 0;
+	border-radius: 0;
 }
 
-.cta_bar {
-	background: @c-dgreen;
-	background-size: cover;
+.teaser {
 	color: #fff;
 	text-transform: uppercase;
 	padding: 45px 30px;
-
-	& .teaser {
-		float: left;
-	}
+	margin-left: 10em;
+	height: 10em;
 }
 
 .cta_btn {
 	background: @c-hgreen;
 	color:#fff;
 	text-transform: uppercase;
+	font-weight: bold;
 	border:none;
+	padding: 15px 30px;
+	display: inline-block;
+	position: absolute;
+	margin-top: -15px;
 
 	&:hover {
 		background: lighten(@c-dgreen, 10%);
 	}
 }
 
-.about {
-	background: @c-hgreen;
+.kasten {
+	background: @c-dgreen;
+	margin-top: 15px;
+	min-height: 400px;
+
+	& .kasten-headline {
+		font-style: italic;
+		text-transform: uppercase;
+		color: #fff;
+		background: @c-red;
+		padding: 5px 0;
+		text-align: center;
+	}
+
+	& .kasten-list {
+		padding: 15px;
+
+		& ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			& li:before {
+				content: " > ";
+			}
+		}
+
+	}
+}
+
+.kasten-button {
+		border: 2px solid @c-dgreen;
+		text-transform: uppercase;
+		color:@c-dgreen;
+		padding: 10px 0;
+		font-size: 1.25em;
+		text-align: center;
+		margin-top: 15px;
+
+		&:before {
+			content: " > ";
+		}
 }
 
 .zitate {
-	background: @c-dgreen;
 	padding: 90px;
 	margin:0 auto;
 	text-transform: uppercase;
 	color:#fff;
 }
 
-.quali {
-	background: @c-hgreen;
+.gallery_btn {
+	padding:10px 15px;
+	margin:0 15px;
+	border:1px solid @c-dgreen;
+	color: @c-dgreen;
+	text-transform: uppercase;
+	background: #fff;
+
+	&:hover {
+		background: @c-dgreen;
+		color: #fff;
+	}
 }
 
+.footer {
+
+	border-top: 10px dotted;
+	border-color: #fff;
+
+	& h1 {
+		color:@c-hgreen;
+		font-size: 1em;
+	}
+
+	& ul {
+		list-style-type: none;
+		padding: 0;
+	}
+}
 
 // Specials
 
@@ -78,4 +203,12 @@
 .dgreen {
 	background: @c-dgreen;
 	color: #fff;
+}
+
+.hgreen {
+	background: @c-hgreen;
+}
+
+.white {
+	color:#fff;
 }
