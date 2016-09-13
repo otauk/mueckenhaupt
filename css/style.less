@@ -10,6 +10,14 @@ body {
 	font-size: 1em;
 }
 
+.row {
+	padding: 30px 0;
+
+	&.nopadding {
+		padding: 0;
+	}
+}
+
 
 // Text
 
@@ -26,11 +34,29 @@ h2 {
 	font-size: 1em;
 }
 
-hr {
-	border-top: 10px solid @c-grey;
-	&.green {
-		border-color: @c-dgreen;
+.trenner {
+	background:  url("../img/trenner_grau.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	height:8px;
+	margin-top:15px;
+	margin-bottom: 30px;
+
+	&.blue {
+		background:  url("../img/trenner_blau.png");
+		background-position: center center;
+	background-repeat: no-repeat;
+
 		}
+}
+
+.trenner_short {
+	background:  url("../img/trenner_blau_kurz.png");
+	background-position: left center;
+	background-repeat: no-repeat;
+	height:8px;
+	margin-top:15px;
+	margin-bottom: 30px;
 }
 
 a, a:hover {
@@ -45,6 +71,7 @@ a, a:hover {
 
 .navbar {
 	margin: 0;
+	margin-top: 5px;
 }
 .navbar-default {
 	background: none;
@@ -76,8 +103,8 @@ a, a:hover {
 
 .logo {
 	width: 400px;
-	min-height: 50px;
-	background: @c-red;
+	min-height: 60px;
+	background: url("../img/logo.png") no-repeat;
 	float:left;
 }
 
@@ -114,10 +141,14 @@ a, a:hover {
 	}
 }
 
+.tuev {
+	position: absolute;
+}
+
 .kasten {
 	background: @c-dgreen;
 	margin-top: 15px;
-	min-height: 400px;
+	min-height: 470px;
 
 	& .kasten-headline {
 		font-style: italic;
@@ -136,6 +167,10 @@ a, a:hover {
 			margin: 0;
 			padding: 0;
 
+			& li {
+				line-height: 1.75em;
+			}
+
 			& li:before {
 				content: " > ";
 			}
@@ -153,16 +188,40 @@ a, a:hover {
 		text-align: center;
 		margin-top: 15px;
 
+
 		&:before {
 			content: " > ";
+			color:@c-red;
+			padding-right:15px;
+		}
+
+		&:hover {
+			background: @c-dgreen;
+			color:#fff;
 		}
 }
 
 .zitate {
-	padding: 90px;
+	padding: 60px 0;
 	margin:0 auto;
 	text-transform: uppercase;
 	color:#fff;
+	font-size: 120%;
+
+	& .name {
+		font-size: 80%;
+		padding: 30px 0 0 0;
+	}
+}
+
+.thumbnail {
+	border: none;
+	border-radius: 0;
+	background: none;
+
+	&>img {
+		max-width: 60%;
+	}
 }
 
 .gallery_btn {
@@ -177,6 +236,10 @@ a, a:hover {
 		background: @c-dgreen;
 		color: #fff;
 	}
+}
+
+.map {
+	pointer-events: none;
 }
 
 .footer {
@@ -211,4 +274,11 @@ a, a:hover {
 
 .white {
 	color:#fff;
+}
+
+.broken  {
+	max-width: 50%;
+	margin: 10px auto;
+	word-wrap: break-word;
+	hyphens:auto;
 }

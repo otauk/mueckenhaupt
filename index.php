@@ -24,7 +24,8 @@
 
 <body>
 	<div class="container">
-		<div class="row">
+		<!-- Navigation -->
+		<div class="row nopadding">
 		<nav class="navbar navbar-default  ">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,10 +41,10 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="about"><a href="?about">Über uns</a></li>
-		        <li class="leistungen"><a href="?about">Leistungen</a></li>
-		        <li class="quali"><a href="?about">Qualifikation</a></li>
-		        <li class="kontakt"><a href="?about">Kontakt</a></li>
+		        <li class="about"><a href="#ueberuns">Über uns</a></li>
+		        <li class="leistungen"><a href="#leistungen">Leistungen</a></li>
+		        <li class="quali"><a href="#qualifikation">Qualifikation</a></li>
+		        <li class="kontakt"><a href="#kontakt">Kontakt</a></li>
 		      </ul>
 		        </li>
 		      </ul>
@@ -51,29 +52,34 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
-		<div class="row">
-			<!-- Jumbotron -->
+
+		<!-- Jumbotron -->
+		<div class="row nopadding">
+
 			<div class="jumbo" ></div>
 		</div>
 
 		<!-- CTA -->
 	    <div class="row dgreen" >
 		    <div class="teaser">
-			    <div class="col-md-8">
+			    <div class="col-md-6">
 				  Ihr zertifizierter Entsorgungsfachbetrieb im Kreis Paderborn
 			    </div>
-			    <div class="col-md-4">
-				    <a href="#">
+			    <div class="col-md-3">
+				    <a href="#kontakt">
 						<div class="cta_btn">
 							Kontakt aufnehmen
 					    </div>
 		    		</a>
 			    </div>
+			    <div class="col-md-3">
+				    <img class="tuev" src="img/tuev.png" />
+			    </div>
 			</div>
 		 </div>
 
 		<!-- Unsere Leistungen -->
-	    <div class="row">
+	    <div class="row" id="leistungen">
 		    <div class="zentriert">
 			    <h1>
 				   Unsere Leistungen
@@ -81,11 +87,12 @@
 			    <h2>
 				    Für Gewerbetreibende und Privatpersonen
 			    </h2>
-			    <hr />
-			    <p class="center-block">
-				     Insbesondere m itende Firmen, die Ihre Metallabf&#228;lle schnell entsorgen m&#252;ssen, <br/>sind auf einen zuverl&#228;ssigen Partner bei der Entsorgung angewiesen.<br/>
-				     <br/>
-				     Die hohe Qualit&#228;t unserer Leistungen sowie die bei uns sehr gro&#223; geschriebene Zuverl&#228;ssigkeit <br/> wird durch unser hochqualifiziertes und dynamisches Team garantiert.
+			    <div class="trenner"></div>
+			    <p class="broken">
+				     Insbesondere m itende Firmen, die Ihre Metallabf&#228;lle schnell entsorgen m&#252;ssen, sind auf einen zuverl&#228;ssigen Partner bei der Entsorgung angewiesen.
+			    </p>
+			    <p class="broken">
+				     Die hohe Qualit&#228;t unserer Leistungen sowie die bei uns sehr gro&#223; geschriebene Zuverl&#228;ssigkeit wird durch unser hochqualifiziertes und dynamisches Team garantiert.
 			    </p>
 		    </div>
 		   <div class="row ">
@@ -94,14 +101,41 @@
 					   <div class="kasten-headline">Handel</div>
 					   <div class="img"><img src="img/service_container.jpg" /></div>
 					   <div class="kasten-list">
-						   <p>Text</p>
+							<p>Europaweiter Handel mit Abf&#228;llen aus der stahlverarbeitenden Industrie:</p>
 						   <ul>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
+					          <li>
+					            	Automobilwerken
+					          </li>
+					          <li>
+					            	Elektronikindustrie
+					          </li>
+					          <li>
+					            	Gie&#223;ereischrotte
+					          </li>
+					          <li>
+					            	Altschrott aus R&#252;ckbau &amp; Abriss
+					          </li>
+					          <li>
+					            Handel mit NE-Metallen 
+					          </li>
+					          <li>
+					            	Nickel/Edelst&#228;hle
+					          </li>
+					          <li>
+					            	Kupfer
+					          </li>
+					          <li>
+					            	Messing
+					          </li>
+					          <li>
+					            	Aluminium
+					          </li>
+					          <li>
+					            	Zink
+					          </li>
+					          <li>
+					            	u.v.m.
+					          </li>
 						   </ul>
 					   </div>
 				   </div>
@@ -116,13 +150,30 @@
 					   <div class="kasten-headline">Industrieservice</div>
 					   <div class="img"><img src="img/service_container.jpg" /></div>
 					   <div class="kasten-list">
+						   <p>
+							   Fach- und sachgerechte Entsorgung jeglicher Materialien nach dem Kreislaufwirtschafts- und Abfallgesetz.
+						   </p>
 						   <ul>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
+					         <li>
+					          Erstellen von Entsorgungskonzepten
+					          </li>
+					         <li>
+					            	Just in Time
+					          </li>
+					         <li>
+					            	Materialanlieferung nach Analyse
+					          </li>
+					         <li>
+					            	Maschinenentsorgung
+					          </li>
+					         <li>
+					            	Abbruch- und R&#252;ckbau
+					          </li>
+					         <li>
+					            	Sondertransporte
+					          </li>
+					         <li>
+					            	u.v.m.
 						   </ul>
 					   </div>
 				   </div>
@@ -137,14 +188,38 @@
 					   <div class="kasten-headline">Containerdienst</div>
 					   <div class="img"><img src="img/service_container.jpg" /></div>
 					   <div class="kasten-list">
+						   <p> Direkt bei Ihnen vor Ort!</p>
 						   <ul>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-						   </ul>
+          <li>
+            	breitgef&#228;chertes Angebot
+          </li>
+          <li>
+            	Container &amp; Mulden
+          </li>
+          <li>
+            	Gr&#246;&#223;en von 3 m&#179; &#8211; 40 m&#179;
+          </li>
+          <li>
+            	f&#252;r diverse Wertstoffe
+          </li>
+          <li>
+            	Schrott &amp; Metalle
+          </li>
+          <li>
+            	Bauschutt
+          </li>
+          <li>
+            	Restm&#252;ll
+          </li>
+          <li>
+            	D&#228;mmmaterialien
+          </li>
+          <li>
+            	Pappe &amp; Papier
+          </li>
+          <li>
+            	u.v.m.
+          </li>						   </ul>
 					   </div>
 				   </div>
 				    <a href="#">
@@ -155,17 +230,34 @@
 			   </div>
 			   <div class="col-md-3">
 				   <div class="kasten">
-					   <div class="kasten-headline">Schrottankauf von privat</div>
-					   <div class="img"><img src="img/service_container.jpg" /></div>
-					   <div class="kasten-list">
-						   <ul>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-							   <li>test</li>
-						   </ul>
+						<div class="kasten-headline">Schrottankauf von privat</div>
+						<div class="img"><img src="img/service_container.jpg" /></div>
+						<div class="kasten-list">
+							<p>Schrottankauf von diversen Metallen:</p>
+							<ul>
+								<li>
+					            	Stahl
+								</li>
+								<li>
+					            	Eisen
+								</li>
+								<li>
+					            	Kufper
+								</li>
+								<li>
+					            	Messing
+								</li>
+								<li>
+					            	NE-Metalle
+								</li>
+								<li>
+					            	u.v.m.
+								</li>
+							</ul>
+					   				<p>
+					            	zu fairen und tagesaktuellen Preisen zu unseren &#214;ffnungszeiten vor Ort. 
+					            	Kilogenaue Abrechnung auf der f&#252;r Sie auch einsehbaren Waage.
+								</p>
 					   </div>
 				   </div>
 				   <a href="#">
@@ -178,7 +270,7 @@
 	    </div>
 
 		<!-- Über uns -->
-	    <div class="row hgreen">
+	    <div class="row hgreen" id="ueberuns">
 		    <div class="col-md-6">
 			    <h1>
 				   Über uns
@@ -186,7 +278,7 @@
 			    <h2>
 				    Familienunternehmen in der 3. Generation
 			    </h2>
-			    <hr class="green"/>
+			    <div class="trenner_short"></div>
 			    <p>
 	Bereits in 3. Generation sind wir seit 1979 / 80 an diesem Standort Ihr kompetenter und erfahrener Ansprechpartner f&#252;r Komplett-Entsorgungssysteme in allen Bereichen der Industrie mit Spezialisierung auf die Abfallverwertung aus der Eisen- und Metallindustrie. Hervorgegangen aus einem Rohproduktenhandel im Sauerland sind wir heute mit Standort in Delbr&#252;ck ein international t&#228;tiges, hochmodernes Recycling-Unternehmen mit 25 qualifizierten Mitarbeitern. Wir schlie&#223;en den Rohstoffkreislauf und schaffen neue Wertstoffe.
 			    </p>
@@ -213,7 +305,9 @@
 	    <div class="row dgreen">
 		    <div class="col-md-12">
 			    <div class="zitate zentriert">
-				    Zitate
+				    <div class="quotes">"</div>
+				    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+				    <div class="name">Will Stephenson</div>
 			    </div>
 		    </div>
 	    </div>
@@ -223,7 +317,7 @@
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1>Bildergalerie</h1>
-				    <hr/>
+				    <div class="trenner"></div>
 				    <button class="gallery_btn">Fuhrpark</button>
 				    <button class="gallery_btn">Fuhrpark</button>
 				    <button class="gallery_btn">Fuhrpark</button>
@@ -251,16 +345,16 @@
 	    </div>
 
 	    <!-- Qualifizierung -->
-	    <div class="row hgreen">
+	    <div class="row hgreen" id="qualifikation">
 		    <div class="col-md-12">
 			    <div class=" zentriert">
 				    <h1>Qualifizierung</h1>
 				    <h2>Zertifizierter Entsorgungsfachbetrieb, der Umwelt zuliebe!</h2>
-					<hr>
+					<div class="trenner blue"></div>
 			    </div>
 					<div class="col-md-6">
 						<p>
-						 Mit unserer Abfallbehandlungsanlage, genehmigt durch das BImSchG, sind wir auch berechtigt, besonders &#252;berwachungsbed&#252;rftige Abf&#228;lle anzunehmen und zu verwerten.<
+						 Mit unserer Abfallbehandlungsanlage, genehmigt durch das BImSchG, sind wir auch berechtigt, besonders &#252;berwachungsbed&#252;rftige Abf&#228;lle anzunehmen und zu verwerten.
 						</p>
 						<p>
             Als zertifizierter Entsorgungsfachbetrieb geben wir unseren Kunden die Sicherheit, dass ihre Abf&#228;lle fach- und sachkundig nach dem Kreislaufwirtschafts-/Abfallgesetz bearbeitet werden. Auch der Umwelt zuliebe!
@@ -283,39 +377,39 @@
 			    <div class="zentriert">
 				    <h1 class="white">Downloads</h1>
 				    <h2>Zertifikate und Siegel</h2>
-					<hr>
+					<div class="trenner blue"></div>
 					<div class="col-md-2 thumbnail">
-						Thumbnail
+						<img src="img/downloads.png" />
 					</div>
 					<div class="col-md-2 thumbnail">
-						Thumbnail
+						<img src="img/downloads.png" />
 					</div>
 					<div class="col-md-2 thumbnail">
-						Thumbnail
+						<img src="img/downloads.png" />
 					</div>
 					<div class="col-md-2 thumbnail">
-						Thumbnail
+						<img src="img/downloads.png" />
 					</div>
 					<div class="col-md-2 thumbnail">
-						Thumbnail
+						<img src="img/downloads.png" />
 					</div>
 					<div class="col-md-2 thumbnail">
-						Thumbnail
+						<img src="img/downloads.png" />
 					</div>
 		    </div>
 		    </div>
 	    </div>
 
 		<!-- Kontakt -->
-	    <div class="row">
+	    <div class="row" id="kontakt">
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1>Kontaktieren Sie uns</h1>
 				    <h2>Wir freuen uns auf Sie!</h2>
-					<hr>
-					<p>
-						testsetrt rt erte rtert eter ter
-					</p>
+					<div class="trenner"></div>
+					<p class="broken">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+						</p>
 			    </div>
 		    </div>
 		    <div class="zentriert">
@@ -344,9 +438,11 @@
 			    <div class="zentriert">
 				    <h1>Anfahrt</h1>
 				    <h2>So finden Sie uns!</h2>
-					<hr>
+					<div class="trenner"></div>
 					<div class="map">
-						Google Map
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2469.0323212954268!2d8.46180931634317!3d51.76901629936107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1473797210601" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen zoomControl: false,
+  scaleControl: false,
+  scrollwheel: false></iframe>
 					</div>
 			   </div>
 		    </div>
@@ -358,18 +454,18 @@
 			    <div class="zentriert">
 				    <h1>Unsere Partner</h1>
 				    <h2>Gemeinsam für Ihren Erfolg</h2>
-					<hr>
+					<div class="trenner"></div>
 					<div class="col-md-3 thumbnail">
-						Thumbnail
+						<img src="img/partner.png" />
 					</div>
 					<div class="col-md-3 thumbnail">
-						Thumbnail
+						<img src="img/partner.png" />
 					</div>
 					<div class="col-md-3 thumbnail">
-						Thumbnail
+						<img src="img/partner.png" />
 					</div>
 					<div class="col-md-3 thumbnail">
-						Thumbnail
+						<img src="img/partner.png" />
 					</div>
 		    </div>
 		    </div>
@@ -411,7 +507,7 @@
 						Fax: 02944/97 10-14
 					</div>
 					<div class="col-md-6">
-						Logo
+						<div class="logo"></div>
 					</div>
 		    </div>
 	    </div>
