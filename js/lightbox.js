@@ -1,5 +1,5 @@
 /*!
- * Lightbox v2.8.1
+ * Lightbox v2.8.2
  * by Lokesh Dhakar
  *
  * More info:
@@ -39,7 +39,7 @@
   // Descriptions of all options available on the demo site:
   // http://lokeshdhakar.com/projects/lightbox2/index.html#options
   Lightbox.defaults = {
-    albumLabel: 'Bild %1 von  %2',
+    albumLabel: 'Image %1 of %2',
     alwaysShowNavOnTouchDevices: false,
     fadeDuration: 500,
     fitImagesInViewport: true,
@@ -48,7 +48,8 @@
     positionFromTop: 50,
     resizeDuration: 700,
     showImageNumberLabel: true,
-    wrapAround: false
+    wrapAround: false,
+    disableScrolling: false
   };
 
   Lightbox.prototype.option = function(options) {
@@ -195,6 +196,11 @@
       left: left + 'px'
     }).fadeIn(this.options.fadeDuration);
 
+    // Disable scrolling of the page while open
+    if (this.options.disableScrolling) {
+      $('body').addClass('lb-disable-scrolling');
+    }
+
     this.changeImage(imageNumber);
   };
 
@@ -272,7 +278,7 @@
   // Stretch overlay to fit the viewport
   Lightbox.prototype.sizeOverlay = function() {
     this.$overlay
-      .width($(window).width())
+      .width($(document).width())
       .height($(document).height());
   };
 
@@ -438,6 +444,9 @@
     $('select, object, embed').css({
       visibility: 'visible'
     });
+    if (this.options.disableScrolling) {
+      $('body').removeClass('lb-disable-scrolling');
+    }
   };
 
   return new Lightbox();

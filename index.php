@@ -25,9 +25,9 @@
   </head>
 
 <body>
-	<div class="wrapper">
+	<div class="container">
 		<!-- Navigation -->
-		<div class="row nopadding content">
+		<div class="row nopadding ">
 		<nav class="navbar navbar-default  ">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -63,11 +63,14 @@
 
 		<!-- CTA -->
 	    <div class="row dgreen" >
+		    <div class="teaser_middle">
 		    <div class="teaser">
-			    <div class="col-md-7">
+			    <div class="col-md-6">
+				    <p class="teaser_text">
 				  Ihr zertifizierter Entsorgungsfachbetrieb im Kreis Paderborn
+				    </p>
 			    </div>
-			    <div class="col-md-3">
+			    <div class="col-md-4">
 				    <a href="#kontakt">
 						<div class="cta_btn">
 							Kontakt aufnehmen
@@ -75,9 +78,10 @@
 		    		</a>
 			    </div>
 			    <div class="col-md-2">
-				    <img class="tuev" src="img/tuev.png" />
+					<img src="img/tuev.png" class="tuev" />
 			    </div>
 			</div>
+		    </div>
 		 </div>
 
 		<!-- Unsere Leistungen -->
@@ -327,30 +331,33 @@
 			    <div class="zentriert">
 				    <h1>Bildergalerie</h1>
 				    <div class="trenner"></div>
-				    <button class="gallery_btn">Fuhrpark</button>
-				    <button class="gallery_btn">Fuhrpark</button>
-				    <button class="gallery_btn">Fuhrpark</button>
-				    <button class="gallery_btn">Fuhrpark</button>
+					<button class="gallery_btn"  data-filter="1">Fuhrpark</button>
+					<button class="gallery_btn"  data-filter="2">Rohstoffe</button>
+					<button class="gallery_btn"  data-filter="3">Referenzen</button>
+					<button class="gallery_btn"  data-filter="4">Firmengelände</button>
+
+
+
+				    <div class="filtr-container">
+			   <div class="filtr-item" data-category="1" data-sort="value">
+			  		<a href="img/downloads.png" data-lightbox="gallery" data-title="test" >
+							<img src="img/downloads.png" alt="sample">
+						</a>
+			    </div>
+			    <div class="filtr-item" data-category="2, 1" data-sort="value" data-lightbox="gallery">
+			       			  		<a href="img/downloads.png" data-lightbox="gallery" data-title="test" >
+							<img src="img/downloads.png" alt="sample">
+						</a>			    </div>
+			    <div class="filtr-item" data-category="1, 3" data-sort="value" data-lightbox="gallery">
+			      			  		<a href="img/downloads.png" data-lightbox="gallery" data-title="test" >
+							<img src="img/downloads.png" alt="sample">
+						</a>
+			    </div>
+					</div>
+
+					<button class="gallery_btn alles" data-filter="all"> All items </button>
 			    </div>
 		    </div>
-		    <div class="col-md-2 thumbnail">
-			    Thumbnail
-			</div>
-			<div class="col-md-2 thumbnail">
-			    Thumbnail
-			</div>
-			<div class="col-md-2 thumbnail">
-			    Thumbnail
-			</div>
-			<div class="col-md-2 thumbnail">
-			    Thumbnail
-			</div>
-			<div class="col-md-2 thumbnail">
-			    Thumbnail
-			</div>
-			<div class="col-md-2 thumbnail">
-			    Thumbnail
-			</div>
 	    </div>
 
 	    <!-- Qualifizierung -->
@@ -411,40 +418,55 @@
 
 		<!-- Kontakt -->
 	    <div class="row" id="kontakt">
-		    <div class="col-md-12">
-			    <div class="zentriert">
+		    <div class="col-md-12 zentriert">
 				    <h1>Kontaktieren Sie uns</h1>
 				    <h2>Wir freuen uns auf Sie!</h2>
 					<div class="trenner"></div>
 					<p class="broken">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 						</p>
-			    </div>
 		    </div>
-		    <div class="zentriert">
-		    <div class="col-md-4">
-			    Mail
+
+		    <div class="col-md-4 zentriert" >
+			    <img class="contact"  src="img/mail.png" />
+			    <p>
+				   <a href="nailto:info@mueckenhaupt-entsorgung.de">info@mueckenhaupt-entsorgung.de</a>
+			    </p>
+			  </div>
+			<div class="col-md-4 zentriert">
+			    <img class="contact" src="img/haus.png" />
+			    <p>
+				    Grubebachstr. 43<br/>
+				    33129 Delbrück-Westenholz
+			    </p>
 			</div>
-			<div class="col-md-4">
-			    Adresse
-			</div>
-			<div class="col-md-4">
-			    Telefon
+			<div class="col-md-4 zentriert">
+			    <img  class="contact" src="img/telefon.png" />
+			    <p>
+				    +49(0) 29 44 - 97 10 - 0<br/>
+				    Fax: 0 29 44 - 97 10 - 14
+			    </p>
 		    </div>
+
+	    <div class="form">
+	    <form name="contact" method="post">
+		    <div class="col-md-6">
+			    <input type="checkbox" name="option1"> Option 1<input type="checkbox" name="option2" style="margin-left: 30px; margin-bottom: 15px"> Option 2
+				<input type="text" class="textfield"  name="anliegen" placeholder="Anliegen*">
+				<input type="text" class="textfield" name="name" placeholder="Name*">
+				<input type="text" class="textfield" name="mail" placeholder="EMail*">
+		    </div>
+		    <div class="col-md-6">
+			    <textarea name="text" class="textfield area"  ></textarea>
+			    <button class="form_btn">Abschicken</button>
+		    </div>
+	    </form>
 	    </div>
-		    <div class="col-md-6">
-			    Form links
-		    </div>
-		    <div class="col-md-6">
-			    Form rechts
-			    <button>Senden</button>
-		    </div>
 	    </div>
 
 	    <!-- Anfahrt -->
 	    <div class="row">
-		    <div class="col-md-12">
-			    <div class="zentriert">
+		    <div class="col-md-12 zentriert">
 				    <h1>Anfahrt</h1>
 				    <h2>So finden Sie uns!</h2>
 					<div class="trenner"></div>
@@ -453,7 +475,6 @@
   scaleControl: false,
   scrollwheel: false></iframe>
 					</div>
-			   </div>
 		    </div>
 	    </div>
 
@@ -529,10 +550,15 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/lightbox.js"></script>
       <script src="js/jquery.slides.min.js"></script>
+      <script src="js/jquery.filterizr.min.js"></script>
   </body>
 </html>
 
   <script>
+	  var filterizd = $('.filtr-container').filterizr({
+   //options object
+});
+
 // Slider
     $(function() {
       $('#slides').slidesjs({
