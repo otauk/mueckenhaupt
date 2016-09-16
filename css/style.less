@@ -1,13 +1,26 @@
 // Farben
-@c-dgreen: rgb(51,91,77);
-@c-hgreen: rgb(150,208,203);
-@c-red: rgb(220,32,48);
-@c-grey:rgb(179,179,180);
+@c-dgreen: #005a4d;
+@c-hgreen: #d3ecea;
+@c-red: #e5202f;
+@c-grey: #777;
 @c-h1: #005a4d;
+
+
 
 body {
 	color: @c-grey;
-	font-size: 1em;
+	font-size: 14px;
+	line-height: 20px;
+	font-family:	'Noto Sans', sans-serif;
+}
+
+.wrapper {
+	width: 1920px;
+	margin: 0 auto;
+}
+
+.content {
+	width: 1170px;
 }
 
 .row {
@@ -25,13 +38,15 @@ h1 {
 	color: @c-dgreen;
 	text-transform: uppercase;
 	font-style: italic;
-	font-size: 2em;
+	font-size: 23px;
+	font-weight: bold;
+	line-height: 31px;
 }
 
 h2 {
 	color: @c-grey;
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 13px;
 }
 
 .trenner {
@@ -81,7 +96,6 @@ a, a:hover {
 .navbar-nav {
 	float: right;
 	font-weight: bold;
-	font-size: 1.125em;
 
 	&>li {
 		text-transform: uppercase;
@@ -126,10 +140,9 @@ a, a:hover {
 }
 
 .cta_btn {
-	background: @c-hgreen;
+	background: #95cfca;
 	color:#fff;
 	text-transform: uppercase;
-	font-weight: bold;
 	border:none;
 	padding: 15px 30px;
 	display: inline-block;
@@ -148,7 +161,8 @@ a, a:hover {
 .kasten {
 	background: @c-dgreen;
 	margin-top: 15px;
-	min-height: 470px;
+	min-height: 550px;
+	color: #fff;
 
 	& .kasten-headline {
 		font-style: italic;
@@ -166,13 +180,15 @@ a, a:hover {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+			font-size: 13px;
+			line-height: 21px;
 
 			& li {
-				line-height: 1.75em;
+
 			}
 
 			& li:before {
-				content: " > ";
+				content: url("../img/listenpunkt_tuerkis.gif");
 			}
 		}
 
@@ -190,7 +206,7 @@ a, a:hover {
 
 
 		&:before {
-			content: " > ";
+			content: url("../img/listenpunkt_rot.gif");
 			color:@c-red;
 			padding-right:15px;
 		}
@@ -207,6 +223,10 @@ a, a:hover {
 	text-transform: uppercase;
 	color:#fff;
 	font-size: 120%;
+
+	& .quotes {
+		padding-bottom: 60px;
+	}
 
 	& .name {
 		font-size: 80%;
@@ -242,14 +262,25 @@ a, a:hover {
 	pointer-events: none;
 }
 
-.footer {
+.footer_border {
+	background: url("../img/footergrafik.png") ;
+	height: 30px;
+	margin-top: -60px;
+}
 
-	border-top: 10px dotted;
-	border-color: #fff;
+.footer_logo {
+	background: url("../img/footer_logo.png") no-repeat ;
+	height: 66px;
+	margin-top:100px;
+
+}
+
+.footer {
 
 	& h1 {
 		color:@c-hgreen;
 		font-size: 1em;
+		font-weight: normal;
 	}
 
 	& ul {

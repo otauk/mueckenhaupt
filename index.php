@@ -14,6 +14,8 @@
     <link href="css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/slideshow.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -23,9 +25,9 @@
   </head>
 
 <body>
-	<div class="container">
+	<div class="wrapper">
 		<!-- Navigation -->
-		<div class="row nopadding">
+		<div class="row nopadding content">
 		<nav class="navbar navbar-default  ">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -62,7 +64,7 @@
 		<!-- CTA -->
 	    <div class="row dgreen" >
 		    <div class="teaser">
-			    <div class="col-md-6">
+			    <div class="col-md-7">
 				  Ihr zertifizierter Entsorgungsfachbetrieb im Kreis Paderborn
 			    </div>
 			    <div class="col-md-3">
@@ -72,7 +74,7 @@
 					    </div>
 		    		</a>
 			    </div>
-			    <div class="col-md-3">
+			    <div class="col-md-2">
 				    <img class="tuev" src="img/tuev.png" />
 			    </div>
 			</div>
@@ -297,7 +299,12 @@
 			    </p>
 		    </div>
 		    <div class="col-md-6">
-		     	<img src="img/service_container.jpg" />
+				    <div id="slides">
+				      <img src="img/about_2.jpg" >
+				      <img src="img/about_3.jpg" >
+				      <img src="img/about_4.jpg" >
+				    </div>
+
 		    </div>
 	    </div>
 
@@ -305,7 +312,9 @@
 	    <div class="row dgreen">
 		    <div class="col-md-12">
 			    <div class="zitate zentriert">
-				    <div class="quotes">"</div>
+				    <div class="quotes">
+					    <img src="img/zitat.png" />
+				    </div>
 				    Lorem ipsum dolor sit amet, consectetur adipisicing elit
 				    <div class="name">Will Stephenson</div>
 			    </div>
@@ -473,27 +482,27 @@
 
 	    <!-- Footer  -->
 	    <div class="row dgreen footer">
+		    <div class="footer_border"></div>
 		    <div class="col-md-12">
 					<div class="col-md-2 ">
 						<h1>Allgemein</h1>
 						<ul>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
+							<li>Über uns</li>
+							<li>Bildgalerie</li>
+							<li>Downloads</li>
+							<li>Anfahrt</li>
+							<li>Unsere Partner</li>
+							<li>Kontakt</li>
 						</ul>
 					</div>
 					<div class="col-md-2 ">
 						<h1>Leistungen</h1>
 						<ul>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
-							<li>eintrag</li>
+							<li>Rohstoffhandel</li>
+							<li>Industrieservice</li>
+							<li>Containerdienst</li>
+							<li>Schrottankauf</li>
+							<li>Qualifizierung</li>
 						</ul>
 					</div>
 					<div class="col-md-2 ">
@@ -507,7 +516,7 @@
 						Fax: 02944/97 10-14
 					</div>
 					<div class="col-md-6">
-						<div class="logo"></div>
+						<div class="footer_logo"></div>
 					</div>
 		    </div>
 	    </div>
@@ -515,8 +524,27 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/lightbox.js"></script>
+      <script src="js/jquery.slides.min.js"></script>
   </body>
 </html>
+
+  <script>
+// Slider
+    $(function() {
+      $('#slides').slidesjs({
+        height: 700,
+        play: {
+          active: true,
+          auto: true,
+          interval: 8000,
+          swap: true,
+           navigation:false
+        }
+
+      });
+    });
+  </script>
