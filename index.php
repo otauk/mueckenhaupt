@@ -25,9 +25,9 @@
   </head>
 
 <body>
-	<div class="container">
 		<!-- Navigation -->
 		<div class="row nopadding ">
+			<div class="container">
 		<nav class="navbar navbar-default  ">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -54,6 +54,7 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 		</div>
+		</div>
 
 		<!-- Jumbotron -->
 		<div class="row nopadding">
@@ -62,8 +63,8 @@
 		</div>
 
 		<!-- CTA -->
-	    <div class="row dgreen" >
-		    <div class="teaser_middle">
+	    <div class="row dgreen nopadding"  style="padding:15px 0;">
+		    <div class="container">
 		    <div class="teaser">
 			    <div class="col-md-6">
 				    <p class="teaser_text">
@@ -81,11 +82,12 @@
 					<img src="img/tuev.png" class="tuev" />
 			    </div>
 			</div>
-		    </div>
 		 </div>
+	    </div>
 
 		<!-- Unsere Leistungen -->
 	    <div class="row" id="leistungen">
+		    <div class="container">
 		    <div class="zentriert">
 			    <h1>
 				   Unsere Leistungen
@@ -274,9 +276,11 @@
 			   </div>
 		   </div>
 	    </div>
+		   </div>
 
 		<!-- Über uns -->
 	    <div class="row hgreen" id="ueberuns">
+		    <div class="container">
 		    <div class="col-md-6">
 			    <h1>
 				   Über uns
@@ -311,6 +315,7 @@
 
 		    </div>
 	    </div>
+	    </div>
 
 	    <!-- Zitate -->
 	    <div class="row dgreen">
@@ -331,37 +336,83 @@
 			    <div class="zentriert">
 				    <h1>Bildergalerie</h1>
 				    <div class="trenner"></div>
-					<button class="gallery_btn"  data-filter="1">Fuhrpark</button>
-					<button class="gallery_btn"  data-filter="2">Rohstoffe</button>
-					<button class="gallery_btn"  data-filter="3">Referenzen</button>
-					<button class="gallery_btn"  data-filter="4">Firmengelände</button>
+					<button class="filter gallery_btn"  data-filter=".category-1">Fuhrpark</button>
+					<button class="filter gallery_btn"  data-filter=".category-2">Rohstoffe</button>
+					<button class="filter gallery_btn"  data-filter=".category-3">Referenzen</button>
+					<button class="filter gallery_btn"  data-filter=".category-4">Firmengelände</button>
+
+		<div id="Container">
+  <div class="mix category-1" data-myorder="1">
+	  <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
+	  </a>
+  </div>
+  <div class="mix category-1" data-myorder="2"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample" class="thumbnail">
+	  </a></div>
+  <div class="mix category-1" data-myorder="3"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample" class="thumbnail">
+	  </a></div>
+  <div class="mix category-2" data-myorder="4"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
+	  </a></div>
+  <div class="mix category-1" data-myorder="5"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
+	  </a></div>
+  <div class="mix category-1" data-myorder="6"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
+	  </a></div>
+  <div class="mix category-2" data-myorder="7"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
+	  </a></div>
+  <div class="mix category-2" data-myorder="8"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
+	  </a></div>
+		</div>
 
 
-
+					<!--
 				    <div class="filtr-container">
 			   <div class="filtr-item" data-category="1" data-sort="value">
-			  		<a href="img/downloads.png" data-lightbox="gallery" data-title="test" >
-							<img src="img/downloads.png" alt="sample">
+			  		<a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+							<img src="img/gelerie_thumb.jpg" alt="sample">
 						</a>
 			    </div>
-			    <div class="filtr-item" data-category="2, 1" data-sort="value" data-lightbox="gallery">
-			       			  		<a href="img/downloads.png" data-lightbox="gallery" data-title="test" >
-							<img src="img/downloads.png" alt="sample">
-						</a>			    </div>
-			    <div class="filtr-item" data-category="1, 3" data-sort="value" data-lightbox="gallery">
-			      			  		<a href="img/downloads.png" data-lightbox="gallery" data-title="test" >
-							<img src="img/downloads.png" alt="sample">
+			    <div class="filtr-item" data-category="2, 1" data-sort="value">
+			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+							<img src="img/gelerie_thumb.jpg" alt="sample">
+						</a>		    </div>
+			    <div class="filtr-item" data-category="1, 3" data-sort="value">
+			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+							<img src="img/gelerie_thumb.jpg" alt="sample">
 						</a>
 			    </div>
-					</div>
+						<div class="filtr-item" data-category="1" data-sort="value">
+			  		<a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+							<img src="img/gelerie_thumb.jpg" alt="sample">
+						</a>
+			    </div>
+			    <div class="filtr-item" data-category="2, 1" data-sort="value">
+			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+							<img src="img/gelerie_thumb.jpg" alt="sample">
+						</a>		    </div>
+			    <div class="filtr-item" data-category="1, 3" data-sort="value">
+			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
+							<img src="img/gelerie_thumb.jpg" alt="sample">
+						</a>
+			    </div>
 
-					<button class="gallery_btn alles" data-filter="all"> All items </button>
+
+					</div>
+						-->
+					<button class="filter gallery_btn alles"  data-filter="all">Alles anzeigen</button>
 			    </div>
 		    </div>
 	    </div>
 
 	    <!-- Qualifizierung -->
 	    <div class="row hgreen" id="qualifikation">
+		    <div class="container">
 		    <div class="col-md-12">
 			    <div class=" zentriert">
 				    <h1>Qualifizierung</h1>
@@ -386,9 +437,11 @@
 					</div>
 		    </div>
 	    </div>
+	    </div>
 
 	     <!-- Downloads -->
 	    <div class="row dgreen">
+		    <div class="container">
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1 class="white">Downloads</h1>
@@ -415,9 +468,11 @@
 		    </div>
 		    </div>
 	    </div>
+	    </div>
 
 		<!-- Kontakt -->
 	    <div class="row" id="kontakt">
+		    <div class="container">
 		    <div class="col-md-12 zentriert">
 				    <h1>Kontaktieren Sie uns</h1>
 				    <h2>Wir freuen uns auf Sie!</h2>
@@ -463,10 +518,12 @@
 	    </form>
 	    </div>
 	    </div>
+	    </div>
 
 	    <!-- Anfahrt -->
-	    <div class="row">
-		    <div class="col-md-12 zentriert">
+	    <div class="row hgreen nopadding">
+		    <div class="container">
+			 	<div class="col-md-12 zentriert">
 				    <h1>Anfahrt</h1>
 				    <h2>So finden Sie uns!</h2>
 					<div class="trenner"></div>
@@ -477,9 +534,11 @@
 					</div>
 		    </div>
 	    </div>
+	    </div>
 
 	    <!-- Unsere Partner -->
 	    <div class="row">
+		    <div class="container">
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1>Unsere Partner</h1>
@@ -500,10 +559,13 @@
 		    </div>
 		    </div>
 	    </div>
+	    </div>
 
 	    <!-- Footer  -->
 	    <div class="row dgreen footer">
 		    <div class="footer_border"></div>
+		    <div class="container">
+
 		    <div class="col-md-12">
 					<div class="col-md-2 ">
 						<h1>Allgemein</h1>
@@ -541,7 +603,7 @@
 					</div>
 		    </div>
 	    </div>
-</div>
+	    </div>
 
 
 
@@ -550,13 +612,19 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/lightbox.js"></script>
       <script src="js/jquery.slides.min.js"></script>
-      <script src="js/jquery.filterizr.min.js"></script>
+      <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
   </body>
 </html>
 
   <script>
-	  var filterizd = $('.filtr-container').filterizr({
-   //options object
+
+
+$(function(){
+
+	// Instantiate MixItUp:
+
+	$('#Container').mixItUp();
+
 });
 
 // Slider
