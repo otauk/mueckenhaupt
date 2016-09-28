@@ -76,9 +76,13 @@ a, a:hover {
 	padding: 0;
 	}
 
+.nav {
+
+	background: #fff;
+}
+
 .navbar {
 	margin: 0;
-	//position: fixed;
 }
 .navbar-default {
 	background: none;
@@ -163,7 +167,7 @@ a, a:hover {
 	}
 
 	& .img {
-		width:80%;
+		overflow: hidden;
 	}
 
 	& .kasten-list {
@@ -256,6 +260,11 @@ a, a:hover {
 		background: @c-dgreen;
 		color: #fff;
 	}
+
+	&.active {
+		background: @c-dgreen;
+		color:#fff;
+	}
 }
 
 .contact {
@@ -321,6 +330,10 @@ a, a:hover {
 	& ul {
 		list-style-type: none;
 		padding: 0;
+
+		& a {
+			color:#fff;
+		}
 	}
 }
 
@@ -347,4 +360,60 @@ a, a:hover {
 	margin: 10px auto;
 	word-wrap: break-word;
 	hyphens:auto;
+}
+
+.fixed {
+position: fixed;
+width: 100%;
+top: 0;
+left: 50%;
+margin-left: -50%;
+z-index: 1000;
+background: #fff;
+}
+
+
+
+/* dfgdgdgdgd
+	*/
+
+.demo-2 {
+    position:relative;
+    width:170px;
+    height:238px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px;
+    background: @c-hgreen;
+}
+.demo-2 p,.demo-2 h2 {
+	color:@c-grey;
+    padding:10px;
+    top:20px;
+    position:relative
+}
+.demo-2 p {
+    margin:0
+}
+.demo-2 h2 {
+    margin:0;
+    text-transform: none;
+}
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+.effect img.top:hover {
+    bottom:-80px;
+    padding-top:100px
+}
+h2.zero,p.zero {
+    margin:0;
+    padding:0
 }

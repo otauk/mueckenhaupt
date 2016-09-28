@@ -25,8 +25,9 @@
   </head>
 
 <body>
+	<a name="top"></a>
 		<!-- Navigation -->
-		<div class="row nopadding ">
+		<div class="row nopadding fixed">
 			<div class="container">
 		<nav class="navbar navbar-default  ">
 		  <div class="container-fluid">
@@ -39,7 +40,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		    </div>
-			    <div class="logo"></div>
+			    <a href="#top"><div class="logo"></div></a>
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
@@ -103,11 +104,11 @@
 				     Die hohe Qualit&#228;t unserer Leistungen sowie die bei uns sehr gro&#223; geschriebene Zuverl&#228;ssigkeit wird durch unser hochqualifiziertes und dynamisches Team garantiert.
 			    </p>
 		    </div>
-		   <div class="row ">
+
 			   <div class="col-md-3">
 				   <div class="kasten">
 					   <div class="kasten-headline">Handel</div>
-					   <div class="img"><img src="img/service_container.jpg" /></div>
+					   <div class="img"><img src="img/handel_schrotthandel.jpg" /></div>
 					   <div class="kasten-list">
 							<p>Europaweiter Handel mit Abf&#228;llen aus der stahlverarbeitenden Industrie:</p>
 						   <ul>
@@ -147,7 +148,7 @@
 						   </ul>
 					   </div>
 				   </div>
-				   <a href="#">
+				   <a href="#kontakt">
 					   <div class="kasten-button">
 						Anfrage stellen
 					</div>
@@ -156,7 +157,7 @@
 			   <div class="col-md-3">
 				   <div class="kasten">
 					   <div class="kasten-headline">Industrieservice</div>
-					   <div class="img"><img src="img/service_container.jpg" /></div>
+					   <div class="img"><img src="img/industrieservice_muecknhaupt.jpg" /></div>
 					   <div class="kasten-list">
 						   <p>
 							   Fach- und sachgerechte Entsorgung jeglicher Materialien nach dem Kreislaufwirtschafts- und Abfallgesetz.
@@ -185,7 +186,7 @@
 						   </ul>
 					   </div>
 				   </div>
-				    <a href="#">
+				     <a href="#kontakt">
 					   <div class="kasten-button">
 						Anfrage stellen
 					</div>
@@ -230,7 +231,7 @@
           </li>						   </ul>
 					   </div>
 				   </div>
-				    <a href="#">
+				     <a href="#kontakt">
 					   <div class="kasten-button">
 						Anfrage stellen
 					</div>
@@ -239,7 +240,7 @@
 			   <div class="col-md-3">
 				   <div class="kasten">
 						<div class="kasten-headline">Schrottankauf von privat</div>
-						<div class="img"><img src="img/service_container.jpg" /></div>
+						<div class="img"><img src="img/schrottankauf_paderborn.jpg" /></div>
 						<div class="kasten-list">
 							<p>Schrottankauf von diversen Metallen:</p>
 							<ul>
@@ -268,13 +269,13 @@
 								</p>
 					   </div>
 				   </div>
-				   <a href="#">
+				    <a href="#kontakt">
 					   <div class="kasten-button">
 						Anfrage stellen
 					</div>
 					</a>
 			   </div>
-		   </div>
+
 	    </div>
 		   </div>
 
@@ -318,7 +319,7 @@
 	    </div>
 
 	    <!-- Zitate -->
-	    <div class="row dgreen">
+	    <div class="row dgreen" id="zitate">
 		    <div class="col-md-12">
 			    <div class="zitate zentriert">
 				    <div class="quotes">
@@ -331,7 +332,7 @@
 	    </div>
 
 	    <!-- Galerie -->
-	    <div class="row">
+	    <div class="row" id="galerie">
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1>Bildergalerie</h1>
@@ -369,42 +370,6 @@
 	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
 	  </a></div>
 		</div>
-
-
-					<!--
-				    <div class="filtr-container">
-			   <div class="filtr-item" data-category="1" data-sort="value">
-			  		<a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-							<img src="img/gelerie_thumb.jpg" alt="sample">
-						</a>
-			    </div>
-			    <div class="filtr-item" data-category="2, 1" data-sort="value">
-			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-							<img src="img/gelerie_thumb.jpg" alt="sample">
-						</a>		    </div>
-			    <div class="filtr-item" data-category="1, 3" data-sort="value">
-			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-							<img src="img/gelerie_thumb.jpg" alt="sample">
-						</a>
-			    </div>
-						<div class="filtr-item" data-category="1" data-sort="value">
-			  		<a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-							<img src="img/gelerie_thumb.jpg" alt="sample">
-						</a>
-			    </div>
-			    <div class="filtr-item" data-category="2, 1" data-sort="value">
-			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-							<img src="img/gelerie_thumb.jpg" alt="sample">
-						</a>		    </div>
-			    <div class="filtr-item" data-category="1, 3" data-sort="value">
-			    <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-							<img src="img/gelerie_thumb.jpg" alt="sample">
-						</a>
-			    </div>
-
-
-					</div>
-						-->
 					<button class="filter gallery_btn alles"  data-filter="all">Alles anzeigen</button>
 			    </div>
 		    </div>
@@ -440,33 +405,96 @@
 	    </div>
 
 	     <!-- Downloads -->
-	    <div class="row dgreen">
+	    <div class="row dgreen" id="downloads">
 		    <div class="container">
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1 class="white">Downloads</h1>
 				    <h2>Zertifikate und Siegel</h2>
 					<div class="trenner blue"></div>
+
 					<div class="col-md-2 thumbnail">
-						<img src="img/downloads.png" />
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<a href="docs/Genehmigungsbescheid.pdf" target="_blank">
+								<img class="top" src="docs/genehmigungsbescheid.jpg" alt=""/>
+							</a>
+						</div>
 					</div>
 					<div class="col-md-2 thumbnail">
-						<img src="img/downloads.png" />
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<p>Anlage 1</p>
+							<a href="docs/Genehmigungsbescheid%20Anlage%201.pdf" target="_blank">
+								<img class="top" src="docs/GS_anlage1.jpg" alt=""/>
+							</a>
+						</div>
 					</div>
 					<div class="col-md-2 thumbnail">
-						<img src="img/downloads.png" />
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<p>Anlage 2</p>
+							<a href="docs/Genehmigungsbescheid%20Anlage%202.pdf" target="_blank">
+								<img class="top" src="docs/GS_anlage2.jpg" alt=""/>
+							</a>
+						</div>
 					</div>
 					<div class="col-md-2 thumbnail">
-						<img src="img/downloads.png" />
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<p>Anlage 3</p>
+							<a href="docs/Genehmigungsbescheid%20Anlage%203.pdf" target="_blank">
+								<img class="top" src="docs/GS_anlage3.jpg" alt=""/>
+							</a>
+						</div>
 					</div>
 					<div class="col-md-2 thumbnail">
-						<img src="img/downloads.png" />
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<p>Anlage 4</p>
+							<a href="docs/Genehmigungsbescheid%20Anlage%204.pdf" target="_blank">
+								<img class="top" src="docs/GS_anlage4.jpg" alt=""/>
+							</a>
+						</div>
 					</div>
 					<div class="col-md-2 thumbnail">
-						<img src="img/downloads.png" />
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<p>Anlage 5</p>
+							<a href="docs/Genehmigungsbescheid%20Anlage%205.pdf" target="_blank">
+								<img class="top" src="docs/GS_anlage5.jpg" alt=""/>
+							</a>
+						</div>
 					</div>
+					<div class="col-md-2 thumbnail">
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<p>Anlage 6</p>
+							<a href="docs/Genehmigungsbescheid%20Anlage%206.pdf" target="_blank">
+								<img class="top" src="docs/GS_anlage6.jpg" alt=""/>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-2 thumbnail">
+						<div class="demo-2 effect">
+							<h2 class="zero">Genehmigungsbescheid</h2>
+							<p>Anlage 7</p>
+							<a href="docs/Genehmigungsbescheid%20Anlage%207.pdf" target="_blank">
+								<img class="top" src="docs/GS_anlage7.jpg" alt=""/>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-2 thumbnail">
+						<div class="demo-2 effect">
+							<h2 class="zero">TÜV-Zertifikat</h2>
+
+							<a href="docs/T%C3%9CV-Zertifikat%20M%C3%BCckenhaupt%20unterschr.%202015.pdf" target="_blank">
+								<img class="top" src="docs/tuevurkunde.jpg" alt=""/>
+							</a>
+						</div>
 		    </div>
 		    </div>
+	    </div>
 	    </div>
 	    </div>
 
@@ -506,7 +534,7 @@
 	    <div class="form">
 	    <form name="contact" method="post">
 		    <div class="col-md-6">
-			    <input type="checkbox" name="option1"> Option 1<input type="checkbox" name="option2" style="margin-left: 30px; margin-bottom: 15px"> Option 2
+			    <input type="radio" name="option"> Option 1<input type="radio" name="option" style="margin-left: 30px; margin-bottom: 15px"> Option 2
 				<input type="text" class="textfield"  name="anliegen" placeholder="Anliegen*">
 				<input type="text" class="textfield" name="name" placeholder="Name*">
 				<input type="text" class="textfield" name="mail" placeholder="EMail*">
@@ -521,7 +549,7 @@
 	    </div>
 
 	    <!-- Anfahrt -->
-	    <div class="row hgreen nopadding">
+	    <div class="row hgreen nopadding" id="anfahrt">
 		    <div class="container">
 			 	<div class="col-md-12 zentriert">
 				    <h1>Anfahrt</h1>
@@ -537,24 +565,18 @@
 	    </div>
 
 	    <!-- Unsere Partner -->
-	    <div class="row">
+	    <div class="row" id="partner">
 		    <div class="container">
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1>Unsere Partner</h1>
 				    <h2>Gemeinsam für Ihren Erfolg</h2>
 					<div class="trenner"></div>
-					<div class="col-md-3 thumbnail">
-						<img src="img/partner.png" />
+					<div class="col-md-6 thumbnail">
+						<img src="img/VW-Logo.jpg" />
 					</div>
-					<div class="col-md-3 thumbnail">
-						<img src="img/partner.png" />
-					</div>
-					<div class="col-md-3 thumbnail">
-						<img src="img/partner.png" />
-					</div>
-					<div class="col-md-3 thumbnail">
-						<img src="img/partner.png" />
+					<div class="col-md-6 thumbnail">
+						<img src="img/obo_bettermann.jpg" />
 					</div>
 		    </div>
 		    </div>
@@ -570,22 +592,22 @@
 					<div class="col-md-2 ">
 						<h1>Allgemein</h1>
 						<ul>
-							<li>Über uns</li>
-							<li>Bildgalerie</li>
-							<li>Downloads</li>
-							<li>Anfahrt</li>
-							<li>Unsere Partner</li>
-							<li>Kontakt</li>
+							<li><a href="#ueberuns">Über uns</a></li>
+							<li><a href="#galerie">Bildergalerie</a></li>
+							<li><a href="#downloads">Downloads</a></li>
+							<li><a href="#anfahrt">Anfahrt</a></li>
+							<li><a href="#partner">Unsere Partner</a></li>
+							<li><a href="#kontakt">Kontakt</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2 ">
 						<h1>Leistungen</h1>
 						<ul>
-							<li>Rohstoffhandel</li>
-							<li>Industrieservice</li>
-							<li>Containerdienst</li>
-							<li>Schrottankauf</li>
-							<li>Qualifizierung</li>
+							<li><a href="#leistungen">Rohstoffhandel</a></li>
+							<li><a href="#leistungen">Industrieservice</a></li>
+							<li><a href="#leistungen">Containerdienst</a></li>
+							<li><a href="#leistungen">Schrottankauf</a></li>
+							<li><a href="#qualifikation">Qualifizierung</a></li>
 						</ul>
 					</div>
 					<div class="col-md-2 ">
@@ -617,27 +639,51 @@
 </html>
 
   <script>
-
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top -60
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 $(function(){
-
 	// Instantiate MixItUp:
+	$('#Container').mixItUp({
+	load: {
+		filter: '.category-1'
+	}
 
-	$('#Container').mixItUp();
+	});
 
+	$('.gallery_btn').click(function() {
+	$('.gallery_btn').removeClass('active');
+    $(this).addClass('active');
 });
+});
+
 
 // Slider
     $(function() {
       $('#slides').slidesjs({
-        height: 700,
+	   width: 570,
+    height: 570,
         play: {
-          active: true,
           auto: true,
           interval: 8000,
           swap: true,
-           navigation:false
-        }
+          navigation: false
+        },
+        pagination: {
+      active: false
+    }
 
       });
     });
