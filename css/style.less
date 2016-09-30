@@ -166,9 +166,13 @@ a, a:hover {
 		text-align: center;
 	}
 
-	& .img {
-		overflow: hidden;
+	& img {
+		//overflow: hidden;
+		width: 100%;
+		height: auto;
+
 	}
+
 
 	& .kasten-list {
 		padding: 15px;
@@ -374,8 +378,7 @@ background: #fff;
 
 
 
-/* dfgdgdgdgd
-	*/
+/* Download-Effekt*/
 
 .demo-2 {
     position:relative;
@@ -417,3 +420,103 @@ h2.zero,p.zero {
     margin:0;
     padding:0
 }
+
+.noDesktopDisplay {
+	display: none;
+}
+
+
+/* media-queries */
+
+@media (max-width:992px) {
+
+	.navbar-header {
+		height: 60px;
+		position: relative;
+		z-index: 5;
+	}
+
+	.navbar-nav {
+		float: none;
+		text-align: center;
+	}
+
+	.logo {
+		background: url("../img/mobile/logo_mobil.png") no-repeat;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+
+	.jumbo {
+		display: none;
+	}
+
+	.teaser {
+		text-align: center;
+		margin-top: 75px;
+	}
+
+	.teaser_text {
+		margin: 0;
+	}
+
+	.tuev {
+		display: none;
+	}
+
+	.kasten {
+		min-height: 0;
+	}
+
+	.kasten-button {
+		margin: 0;
+	}
+
+	.gallery_btn {
+		margin: 0;
+		margin-top: 5px;
+		width: 45%;
+	}
+
+
+	.noMobileDisplay {
+		display: none;
+	}
+
+	.footer_logo {
+	background: url("../img/mobile/logo_mobil_foot.png") no-repeat ;
+	margin-top: 30px;
+
+	}
+
+	.noDesktopDisplay {
+	display: block;
+
+	}
+
+	.dlList {
+			text-align: left;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			font-size: 13px;
+			line-height: 21px;
+
+			& a {
+				color: #fff;
+			}
+
+
+			& li:before {
+				content: url("../img/listenpunkt_tuerkis.png");
+				margin-right: 5px;
+			}
+		}
+
+
+
+
+}
+

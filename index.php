@@ -67,12 +67,12 @@
 	    <div class="row dgreen nopadding"  style="padding:15px 0;">
 		    <div class="container">
 		    <div class="teaser">
-			    <div class="col-md-6">
+			    <div class="col-md-6 col-xs-12">
 				    <p class="teaser_text">
 				  Ihr zertifizierter Entsorgungsfachbetrieb im Kreis Paderborn
 				    </p>
 			    </div>
-			    <div class="col-md-4">
+			    <div class="col-md-4 col-xs-12">
 				    <a href="#kontakt">
 						<div class="cta_btn">
 							Kontakt aufnehmen
@@ -97,12 +97,14 @@
 				    Für Gewerbetreibende und Privatpersonen
 			    </h2>
 			    <div class="trenner"></div>
-			    <p class="broken">
+			    <div class="col-md-12">
+				    <p>
 				     Insbesondere m itende Firmen, die Ihre Metallabf&#228;lle schnell entsorgen m&#252;ssen, sind auf einen zuverl&#228;ssigen Partner bei der Entsorgung angewiesen.
 			    </p>
-			    <p class="broken">
+			    <p>
 				     Die hohe Qualit&#228;t unserer Leistungen sowie die bei uns sehr gro&#223; geschriebene Zuverl&#228;ssigkeit wird durch unser hochqualifiziertes und dynamisches Team garantiert.
 			    </p>
+			    </div>
 		    </div>
 
 			   <div class="col-md-3">
@@ -337,10 +339,20 @@
 			    <div class="zentriert">
 				    <h1>Bildergalerie</h1>
 				    <div class="trenner"></div>
+				    <div class="noMobileDisplay">
 					<button class="filter gallery_btn"  data-filter=".category-1">Fuhrpark</button>
 					<button class="filter gallery_btn"  data-filter=".category-2">Rohstoffe</button>
 					<button class="filter gallery_btn"  data-filter=".category-3">Referenzen</button>
 					<button class="filter gallery_btn"  data-filter=".category-4">Firmengelände</button>
+				    </div>
+
+				    <div class="noDesktopDisplay">
+					<button class="filter gallery_btn"  data-filter=".category-1">Fuhrpark</button>
+					<button class="filter gallery_btn"  data-filter=".category-2">Rohstoffe</button>
+					<button class="filter gallery_btn"  data-filter=".category-3">Referenzen</button>
+					<button class="filter gallery_btn"  data-filter=".category-4">Firmengelände</button>
+				    </div>
+
 
 		<div id="Container">
   <div class="mix category-1" data-myorder="1">
@@ -410,8 +422,54 @@
 		    <div class="col-md-12">
 			    <div class="zentriert">
 				    <h1 class="white">Downloads</h1>
-				    <h2>Zertifikate und Siegel</h2>
+				    <h2 class="white">Zertifikate und Siegel</h2>
 					<div class="trenner blue"></div>
+
+					<div class="noDesktopDisplay">
+
+						<ul class="dlList">
+							<li>
+								<a href="docs/Genehmigungsbescheid.pdf" target="_blank">
+									Genehmigungsbescheid
+								</a>
+							</li>
+							<li>
+								<a href="docs/Genehmigungsbescheid.pdf" target="_blank">
+									Genehmigungsbescheid, Anlage 1
+								</a>
+							</li>
+							<li>
+								<a href="docs/Genehmigungsbescheid.pdf" target="_blank">
+									Genehmigungsbescheid, Anlage 1
+								</a>
+							</li>
+							<li><a href="docs/Genehmigungsbescheid%20Anlage%203.pdf" target="_blank">
+								Genehmigungsbescheid, Anlage 1
+							</a></li>
+							<li><a href="docs/Genehmigungsbescheid%20Anlage%204.pdf" target="_blank">
+								Genehmigungsbescheid, Anlage 1
+							</a></li>
+
+							<li><a href="docs/Genehmigungsbescheid%20Anlage%205.pdf" target="_blank">
+								Genehmigungsbescheid, Anlage 1
+							</a></li>
+							<li><a href="docs/Genehmigungsbescheid%20Anlage%206.pdf" target="_blank">
+								Genehmigungsbescheid, Anlage 1
+							</a></li>
+							<li><a href="docs/Genehmigungsbescheid%20Anlage%207.pdf" target="_blank">
+								Genehmigungsbescheid, Anlage 1
+							</a></li>
+							<li><a href="docs/T%C3%9CV-Zertifikat%20M%C3%BCckenhaupt%20unterschr.%202015.pdf" target="_blank">
+								TÜV-Zertifikat
+								</a></li>
+
+
+						</ul>
+
+
+					</div>
+
+					<div class="noMobileDisplay">
 
 					<div class="col-md-2 thumbnail">
 						<div class="demo-2 effect">
@@ -425,8 +483,8 @@
 						<div class="demo-2 effect">
 							<h2 class="zero">Genehmigungsbescheid</h2>
 							<p>Anlage 1</p>
-							<a href="docs/Genehmigungsbescheid%20Anlage%201.pdf" target="_blank">
-								<img class="top" src="docs/GS_anlage1.jpg" alt=""/>
+							<a href="docs/Genehmigungsbescheid.pdf" target="_blank">
+								<img class="top" src="docs/genehmigungsbescheid.jpg" alt=""/>
 							</a>
 						</div>
 					</div>
@@ -434,8 +492,8 @@
 						<div class="demo-2 effect">
 							<h2 class="zero">Genehmigungsbescheid</h2>
 							<p>Anlage 2</p>
-							<a href="docs/Genehmigungsbescheid%20Anlage%202.pdf" target="_blank">
-								<img class="top" src="docs/GS_anlage2.jpg" alt=""/>
+							<a href="docs/Genehmigungsbescheid.pdf" target="_blank">
+								<img class="top" src="docs/genehmigungsbescheid.jpg" alt=""/>
 							</a>
 						</div>
 					</div>
@@ -493,6 +551,8 @@
 							</a>
 						</div>
 		    </div>
+
+					</div>
 		    </div>
 	    </div>
 	    </div>
@@ -505,7 +565,7 @@
 				    <h1>Kontaktieren Sie uns</h1>
 				    <h2>Wir freuen uns auf Sie!</h2>
 					<div class="trenner"></div>
-					<p class="broken">
+					<p class="broken noMobileDisplay">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 						</p>
 		    </div>
@@ -589,9 +649,9 @@
 		    <div class="container">
 
 		    <div class="col-md-12">
-					<div class="col-md-2 ">
+					<div class="col-md-2 noMobileDisplay">
 						<h1>Allgemein</h1>
-						<ul>
+						<ul >
 							<li><a href="#ueberuns">Über uns</a></li>
 							<li><a href="#galerie">Bildergalerie</a></li>
 							<li><a href="#downloads">Downloads</a></li>
