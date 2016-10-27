@@ -353,26 +353,77 @@
 					<button class="filter gallery_btn"  data-filter=".category-4">Firmengelände</button>
 				    </div>
 
+<div id="Container">
+		<?php
+			// Bildergalerie
+			$imgPath = "img/galerie/";
 
-		<div id="Container">
-  <div class="mix category-1" data-myorder="1">
-	  <a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
-	  </a>
-  </div>
-  <div class="mix category-1" data-myorder="2"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-	  		<img src="img/gelerie_thumb.jpg" alt="sample" class="thumbnail">
-	  </a></div>
-  <div class="mix category-1" data-myorder="3"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-	  		<img src="img/gelerie_thumb.jpg" alt="sample" class="thumbnail">
-	  </a></div>
+			$imgCat = array ("Fuhrpark", "Rohstoffe", "Referenzen", "Firmengelände");
+
+			$imgGallery = array (
+							[
+							// Fuhrpark
+							"1" => "fuhrpark_mueckenhaupt.jpg",
+							"2" => "kipper.jpg",
+							"3" => "metallhandel.jpg",
+							"3" => "mueckenhaupt_westenholz.jpg",
+							"5" => "mulden.jpg"
+							],
+							[
+							// Rohstoffe
+							"1" => "OB791297a.jpg",
+							"2" => "OB791303a.jpg",
+							"3" => "OB791314a.jpg",
+							"4" => "OB791334a.jpg",
+							"5" => "OB791339a.jpg",
+							"6" => "OB791341a.jpg",
+							"7" => "OB791355a.jpg",
+							"8" => "OB791396a.jpg"
+							],
+							[
+							// Referenzen
+							"1" => "OB791300a.jpg",
+							"2" => "OB791310a.jpg"
+							],
+							[
+							// Firmengelände
+							"1" => "containerdienst_delbrueck.jpg",
+							"2" => "einfahrt_firmengelaende.jpg",
+							"3" => "luftbild_westenholz.jpg",
+							"4" => "recycling_metalle.jpg",
+							"5" => "schrotthandel.jpg"
+							]
+
+							);
+
+			// Loop über die Kategorien (4 Stück)
+			$c = 1;
+			for ($v=0;$v<4;$v++)
+
+			{
+				// Zähler für die Kategorie
+
+				// Loop üer die einzelnen Bilder
+				foreach ($imgGallery[$v] as $img) {
+					// Pfad zusammensetzen
+					$path = $imgPath.$imgCat[$v]."/".$img;
+					$category[0];
+				?>
+				<div class="mix category-<?=$c;?>">
+					<a href="<?=$path;?>" data-lightbox="gallery" data-title="<?=$imgCat[$v];?>" >
+						<img src="<?=$path;?>" alt="<?=$imgCat[$v];?>" class="thumbnail">
+					</a>
+				</div>
+			<?php
+				}
+				$c++;
+			}
+
+		?>
+
+
+
   <div class="mix category-2" data-myorder="4"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
-	  </a></div>
-  <div class="mix category-1" data-myorder="5"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
-	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
-	  </a></div>
-  <div class="mix category-1" data-myorder="6"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >
 	  		<img src="img/gelerie_thumb.jpg" alt="sample"  class="thumbnail">
 	  </a></div>
   <div class="mix category-2" data-myorder="7"><a href="img/gelerie_thumb.jpg" data-lightbox="gallery" data-title="test" >

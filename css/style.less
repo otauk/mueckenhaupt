@@ -239,10 +239,22 @@ a, a:hover {
 	border: none;
 	border-radius: 0;
 	background: none;
+	height: 180px;
+	width: 180px;
+	margin-bottom: 0;
+	object-fit:cover;
 
-	&>img {
-		max-width: 60%;
+	&:before {
+		background: red;
 	}
+
+	&:hover:before {
+		background: red;
+	}
+
+
+
+
 }
 
 #Container {
