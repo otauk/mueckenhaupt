@@ -26,6 +26,10 @@ body {
 
 // Text
 
+h1, h2, h3, h4, h4, h6 {
+	position: relative;
+}
+
 h1 {
 	color: @c-dgreen;
 	text-transform: uppercase;
@@ -98,17 +102,28 @@ a, a:hover {
 		border-top: 5px solid transparent;
 		margin: 0 30px;
 
-		&>a {
+		&>a{
 			color: @c-dgreen !important;
 			&:hover {
 				color: @c-hgreen !important;
 			}
 		}
-		&:hover {
+		&:hover, &.nav_active:hover {
 			border-top: 5px solid;
 			border-color: @c-hgreen;
 		}
 	}
+
+	& .nav_active {
+			color: @c-hgreen !important;
+			border-top: 5px solid;
+			border-color: @c-hgreen;
+
+			&>a {
+				color: @c-hgreen !important;
+
+			}
+		}
 }
 
 .logo {
@@ -119,7 +134,7 @@ a, a:hover {
 }
 
 .jumbo {
-	background: url("../img/header.jpg");
+	background: url("../img/header_small.jpg");
 	background-size: cover;
 	width:100%;
 	padding: 20%;
@@ -190,6 +205,7 @@ a, a:hover {
 
 			& li:before {
 				content: url("../img/listenpunkt_tuerkis.png");
+				margin-right: 5px;
 			}
 		}
 
@@ -200,7 +216,7 @@ a, a:hover {
 		border: 3px solid @c-dgreen;
 		text-transform: uppercase;
 		color:@c-dgreen;
-		padding: 13px 0 15px 0;
+		padding: 15px 0 15px 0;
 		font-size: 1.25em;
 		text-align: center;
 		margin-top: 15px;
@@ -210,6 +226,7 @@ a, a:hover {
 			content: url("../img/listenpunkt_rot.png");
 			color:@c-red;
 			padding:5px 15px 0 0;
+			vertical-align: middle;
 		}
 
 		&:hover {
@@ -257,16 +274,13 @@ a, a:hover {
 
 }
 
-#Container {
-	padding-top: 30px;
-}
 #Container .mix{
 	display: none;
 }
 
 .gallery_btn {
 	padding:10px 15px;
-	margin:0 15px;
+	margin: 15px 10px;
 	border:1px solid @c-dgreen;
 	color: @c-dgreen;
 	text-transform: uppercase;
@@ -298,7 +312,7 @@ a, a:hover {
 	margin-bottom: 10px;
 
 	&.area {
-		margin-top: 32px;
+		//margin-top: 32px;
 		height:152px;
 	}
 }
@@ -336,6 +350,8 @@ a, a:hover {
 }
 
 .footer {
+
+	margin-top: 30px;
 
 	& h1 {
 		color:@c-hgreen;
@@ -437,6 +453,64 @@ h2.zero,p.zero {
 	display: none;
 }
 
+/* Leistungen */
+
+.leistungenImg {
+	height: auto;
+	width: 100%;
+}
+
+.leistungenButton {
+		border: 3px solid @c-dgreen;
+		text-transform: uppercase;
+		color:@c-dgreen;
+		padding: 15px 0 15px 0;
+		font-size: 1.25em;
+		text-align: center;
+		margin-top: 15px;
+		width: 50%;
+
+
+		&:before {
+			content: url("../img/listenpunkt_rot.png");
+			color:@c-red;
+			padding:0px 10px 0 0;
+			vertical-align: middle;
+		}
+
+		&:hover {
+			background: @c-dgreen;
+			color:#fff;
+		}
+}
+
+.topLink {
+	display: block;
+	height: 60px;
+	margin-top: -60px;
+	visibility: hidden;
+}
+
+.leistungenList {
+		padding: 15px;
+
+		& ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			font-size: 13px;
+			line-height: 21px;
+
+			& li {
+
+			}
+
+			& li:before {
+				content: url("../img/listenpunkt_tuerkis.png");
+				margin-right: 5px;
+			}
+		}
+		}
 
 /* media-queries */
 
@@ -492,6 +566,10 @@ h2.zero,p.zero {
 		width: 45%;
 	}
 
+	#Container {
+		padding-top: 15px;
+	}
+
 
 	.noMobileDisplay {
 		display: none;
@@ -526,6 +604,10 @@ h2.zero,p.zero {
 				margin-right: 5px;
 			}
 		}
+
+	.leistungenButton {
+		width: 100%;
+	}
 
 
 
